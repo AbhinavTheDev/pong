@@ -229,10 +229,10 @@ class Game {
       return;
     }
     switch (e.key) {
-      case "w":
+      case "ArrowUp":
         this.leftPaddle.dy = -PADDLE_SPEED;
         break;
-      case "s":
+      case "ArrowDown":
         this.leftPaddle.dy = PADDLE_SPEED;
         break;
     }
@@ -240,8 +240,8 @@ class Game {
 
   handleKeyUp(e) {
     switch (e.key) {
-      case "w":
-      case "s":
+      case "ArrowUp":
+      case "ArrowDown":
         this.leftPaddle.dy = 0;
         break;
     }
